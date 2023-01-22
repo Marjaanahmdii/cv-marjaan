@@ -1,40 +1,210 @@
 .App {
   text-align: center;
 }
-
-.React-logo {
-  max-width: 200px;
-  animation: React-logo-spin 6s linear infinite;
-}
-
-.Fleek-logo {
-  max-width: 400px;
-}
-
-.Big-plus {
-  font-size: calc(50px + 2vmin);
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App .header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 30px 60px;
+}
+.App .header .left-header {
+  display: flex;
+  flex-direction: row;
+}
+.App .header .left-header a .social-icon{
+  width: 40px;
+  cursor: pointer;
+  padding: 0 4px;
+}
+.App .header .right-header {
+  display: flex;
+  flex-direction: row;
+}
+.App .header .right-header .button{
+  border-width: 2px;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 12px;
+  background-color: transparent;
+  border-color: #6E07F3;
+  color: #6E07F3;
+  border-radius: 9999px;
+}
+.App .header .right-header .button:hover{
+  background-color: #6E07F3;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App .content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-@keyframes React-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .content .intro .intro-header {
+  font-size: 3rem !important;
+  font-weight: 800;
+
+}
+.App .content .intro .sub-header {
+  font-size: 1.5rem !important;
+  font-weight: 400;
+}
+.App .content .intro .avatar {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+
+}
+.App .content .coral-foot {
+  padding: 0rem 1.5rem;
+  margin-top: 120px;
+}
+.App .content .coral-foot .container .coral-devices{
+  margin-bottom: -0.45rem;
+  max-width: 860px;
+  height: auto;
+}
+.App .content .summary {
+  background-color: #6E07F3;
+  color: white;
+  padding: 9rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App .content .summary .container {
+  text-align: center !important;
+  width: 60%;
+}
+
+ 
+
+.App .content .summary .container .desc {
+  line-height: 1.5;
+  font-weight: 400 !important;
+  font-size: 1.25rem !important;
+}
+
+.App .content .skills{
+  margin-top: -14rem;
+  padding-bottom: 1rem;
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+
+.App .content .skills .container {
+  max-width: 1100px;
+}
+.App .content .skills .container .box {
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+  color: #141c3a;
+  display: flex;
+  padding: 1.25rem;
+  border-radius: 12px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  justify-content: space-around;
+  height: 817px;
+}
+
+.App .content .skills .container .box .column {
+  padding: 70px 45px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-bottom: 0px solid #E6ECF8;
+  border-right: 1px solid #E6ECF8;
+  width: 50%;
+}
+
+.App .content .skills .container .box .column .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.App .content .skills .container .box .column .header .icon{
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+
+.App .content .skills .container .box .column .header .icon .has-text-success{
+  color: #5BE9B9 !important;
+  height: 4rem;
+  width: 4rem;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index,auto);
+}
+.App .content .skills .container .box .column .header .icon .has-text-dark{
+  color: #141c3a !important;
+  height: 2em;
+  width: 2em;
+  overflow: visible;
+  box-sizing: content-box;
+  position: relative;
+  position: absolute;
+  top: 1.5%;
+  right: -18%;
+}
+.App .content .skills .container .box .column .header .title {
+  font-weight: 800;
+  font-size: 1.5rem !important;
+}
+.App .content .skills .container .box .column .item-title {
+  color: #6E07F3;
+  font-weight: 400 !important;
+  line-height: 1.5;
+  font-size: 18px;
+}
+.App .content .skills .container .box .column .skill-set {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.App .content .skills .container .box .column .skill-item {
+  padding: 10px;
+}
+.App .content .companies {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  flex-direction: column;
+}
+.App .content .companies .list{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.App .content .companies .list .item{
+  padding: 36px;
+  color: #6E07F3;
+  cursor: pointer;
+}
+.App .content .companies .list .item .logo{
+  width: 200px;
+  height: 200px;
+}
+.App .content .companies .title{
+  font-size: 2rem !important;
+  font-weight: 800;
 }
